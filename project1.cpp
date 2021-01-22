@@ -18,7 +18,7 @@ void makeFile(string, int, int);
 int main(int argc, char* argv[])
 {
 
-	string filename;
+   string fileName;
 	int numPrimes, numColumns;
 
 	//return 1 and exit the program if no command line arguments provided.
@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 		return 1;
 	}
 	
-	string fileName = argv[1];
+	fileName = argv[1];
 	
 	cout << "How many primes should be stored? "<< endl;
 	cin >> numPrimes;
@@ -65,7 +65,6 @@ bool isPrime(int num)
 /*
 	Description: This function creates a file with the given name, with the specified number of primes arranged in the specified number of columns
 	Input: The desired file name, the number of primes to be saved, and the number of columns desired.
-	Returns: void.
 */
 void makeFile(string fileName, int numPrimes, int numColumns)
 {
